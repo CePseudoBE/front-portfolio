@@ -1,4 +1,5 @@
 ---
+import Sidebar from '../components/Sidebar.astro';
 interface Props {
 	title: string;
 }
@@ -16,8 +17,11 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="relative">
+		<Sidebar />
+		<div> <!-- Ajustez la marge pour tenir compte de la largeur de la barre latérale -->
+			<slot />
+		</div>
 	</body>
 </html>
 <style is:global>
