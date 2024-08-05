@@ -1,5 +1,10 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/20240606_FARI-portret_ByThierryGeenen0102.jpg';
+---
+
 <article class="flex flex-col md:flex-row justify-between">
-    <section class="w-full md:w-1/2 border border-blue-500 h-[50vh] md:h-[65vh]">
+    <section class="w-full md:w-1/2 border border-blue-500 h-[60vh] md:h-[65vh]">
         <div class="p-8 lg:p-16 2xl:p-64">
             <h1 class="text-3xl">
                 Full-stack Developer
@@ -9,7 +14,9 @@
             </p>
         </div>
     </section>
-    <section class="w-full md:w-1/2 border border-blue-500 h-[50vh] md:h-[65vh]">
-        Ceci est un test
+    <section class="w-full md:w-1/2 border border-blue-500 h-[55vh] md:h-[65vh]">
+        <div class="h-full w-full flex justify-center items-center">
+            <img src={portrait.src} alt='Hoffmann Axel pic' class="h-5/6 lg:h-3/5"/>
+        </div>
     </section>
 </article>
