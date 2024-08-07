@@ -1,0 +1,23 @@
+<form aria-labelledby="form-title" class="max-w-lg mx-auto p-4 border border-gray-300 rounded-lg shadow-sm">
+    <h2 id="form-title" class="text-xl font-semibold mb-4">Contact Form</h2>
+    
+    <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Your name</label>
+        <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-desc" class="mt-1 p-2 block w-full border border-gray-300 rounded-md"/>
+        <span id="name-desc" class="sr-only">Please enter your full name</span>
+    </div>
+    
+    <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Your email</label>
+        <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-desc" class="mt-1 p-2 block w-full border border-gray-300 rounded-md"/>
+        <span id="email-desc" class="sr-only">Please enter a valid email address</span>
+    </div>
+    
+    <div class="mb-4">
+        <label for="contact" class="block text-sm font-medium text-gray-700">Why are you contacting me today?</label>
+        <textarea id="contact" name="contact" required aria-required="true" minlength="10" aria-describedby="contact-desc" class="mt-1 p-2 block w-full border border-gray-300 rounded-md"></textarea>
+        <span id="contact-desc" class="sr-only">Please provide a reason for contacting, at least 10 characters long</span>
+    </div>
+    
+    <button type="submit" aria-label="Send form" class="w-full py-2 px-4 bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Send</button>
+</form>
