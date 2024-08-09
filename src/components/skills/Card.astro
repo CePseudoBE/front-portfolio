@@ -1,0 +1,15 @@
+---
+const {imgs, titles} = Astro.props;
+---
+
+<div class="mt-5 h-fit border border-blue-800 flex flex-col justify-start flex-wrap min-w-[25vw] max-w-[100vw] min-h-fit"> 
+    <h3 class="flex justify-center my-2">Languages</h3> <!--TODO : MAKE ALL SQUARE THE SAME SIZE   -->
+    <div class="flex gap-6 items-center mx-2 p-8 flex-wrap">
+        {titles.map((title : string, index : number) => (
+            <div class="grid place-items-center">
+                <Fragment set:html={imgs[index]}/>
+                <p>{title}</p>
+            </div>
+        ))}
+    </div>
+</div>
