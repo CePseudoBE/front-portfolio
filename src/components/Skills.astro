@@ -2,6 +2,11 @@
 import python from "../assets/python-5.svg?raw"
 import ts from "../assets/typescript.svg?raw"
 import php from "../assets/Official PHP Logo.svg?raw"
+import adonis from "../assets/adonisjs.svg?raw"
+import postgres from "../assets/postgresql.svg?raw"
+import laravel from "../assets/laravel-2.svg?raw"
+import express from "../assets/express-109.svg?raw"
+import mariadb from "../assets/mariadb.svg?raw"
 import Card from "./skills/Card.astro"
 
 const languages = [
@@ -18,13 +23,36 @@ const languages = [
     "img": php
   }
 ]
+
+const backs = [
+  {
+    "title": "AdonisJS",
+    "img": adonis
+  },
+  {
+    "title": "PostgreSQL",
+    "img": postgres
+  },
+  {
+    "title": "Laravel",
+    "img": laravel
+  },
+  {
+    "title": "Express",
+    "img": express
+  },
+  {
+    "title": "MariaDB",
+    "img": mariadb
+  },
+]
 ---
 
 <article id="skills" class="h-full">
     <h1 class="text-2xl text-center mb-4 mt-2">Skills</h1>
     <section class="flex md:flex-row flex-col md:justify-evenly items-center h-1/2 border border-sky-500">
         <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} />
-        <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} />
+        <Card imgs={backs.map(back => back.img)} titles={backs.map(back => back.title)} />
         <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} />
       </div>
     </section>
