@@ -50,10 +50,10 @@ const backs = [
 
 <article id="skills" class="h-full">
     <h1 class="text-2xl text-center mb-4 mt-2">Skills</h1>
-    <section class="flex md:flex-row flex-col md:justify-evenly items-center h-1/2 border border-sky-500">
-        <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} />
-        <Card imgs={backs.map(back => back.img)} titles={backs.map(back => back.title)} />
-        <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} />
+    <section class="flex md:flex-row flex-col md:justify-evenly items-center h-1/2 border border-sky-500 gap-8 mx-4">
+        <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} head="Languages"/>
+        <Card imgs={backs.map(back => back.img)} titles={backs.map(back => back.title)} head="Back-end"/>
+        <Card imgs={languages.map(lang => lang.img)} titles={languages.map(lang => lang.title)} head="Front-end"/>
       </div>
     </section>
 </article>
