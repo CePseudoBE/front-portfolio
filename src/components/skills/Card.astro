@@ -3,7 +3,7 @@ const {imgs, titles, head} = Astro.props;
 ---
 <div class="mt-5 h-fit border border-blue-800 flex flex-col justify-start flex-wrap min-w-[25vw] max-w-[100vw] min-h-fit"> 
     <h3 class="flex justify-center my-2">{head}</h3>
-    <div class="grid grid-cols-3 gap-4 mx-2 p-6">
+    <div class="grid grid-cols-3 gap-4 mx-2 sm:p-2">
         {titles.map((title : string, index : number) => (
             <div class="grid place-items-center w-32 h-32 border border-gray-300">
                 <div class="flex flex-col items-center justify-center h-full">
